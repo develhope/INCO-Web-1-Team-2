@@ -1,3 +1,48 @@
-body {
-    text-decoration: line-through;
+@media (min-width: 768px) {
+    .hero {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .hero-content {
+        text-align: left;
+        max-width: 50%;
+    }
+}
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 1.5rem;
+    gap: 2rem;
+}
+
+.hero-content {
+    text-align: center;
+    
+}
+
+.hero-image img{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+}
+
+.hero-content a:hover {
+    background-color: #d6b588;
+}
+
+.hero-content a {
+    background-color: #d87348;
+    color: #fdfbd4;
+    aria-la
+}
+
+.btn-primary {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
 }
