@@ -1,11 +1,153 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Luna Curls</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="text/javascript" src="js/script.js"></script>
 </head>
+
 <body>
-    
+  <!-- Side drawer -->
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="drawer" id="drawer" aria-hidden="true">
+
+    <header>
+
+      <div class="drawer-brand">
+        <div class="logo-mark" aria-hidden="true"></div>
+        <div>
+          <div class="drawer-title">Luna Curls</div>
+          <div class="drawer-subtitle">Afro-luxe hair care</div>
+        </div>
+      </div>
+
+      <button class="close" id="closeDrawer" aria-label="Close menu" type="button">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </header>
+
+    <div class="section-title">Shop</div>
+    <a href="#"><i class="fa-solid fa-house"></i> Homepage</a>
+    <a href="#"><i class="fa-solid fa-bag-shopping"></i> Products</a>
+  <a href="#"><i class="fa-solid fa-star"></i> Services</a>
+    <a href="#"><i class="fa-solid fa-box"></i> Orders</a>
+    <a href="#"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+
+    <div class="section-title">Company</div>
+    <a href="#"><i class="fa-regular fa-circle-question"></i> About Us</a>
+    <a href="#"><i class="fa-regular fa-envelope"></i> Contact Us</a>
+
+    <div class="section-title">Account</div>
+    <a href="#"><i class="fa-regular fa-heart"></i> Wish List</a>
+    <a href="#"><i class="fa-regular fa-user"></i> Profile</a>
+
+    <div class="note">
+      <strong>Il Benessere dei tuoi capelli</strong><br/>
+      Oli, burri e kit creati con cura — premium, accessibile, e caldo come casa.
+    </div>
+  </aside>
+
+
+  <div class="nav-wrap" id="navWrap">
+    <nav class="navbar" aria-label="Primary navigation">
+      <div class="left">
+        <!-- solo tablet/phone -->
+        <button class="hamburger" id="openDrawer" aria-label="Open menu" type="button">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <a class="brand" href="#">
+          <span class="logo-mark" aria-hidden="true"></span>
+          <span>
+            <span class="title">Luna Curls</span>
+            <span class="subtitle">Afro-luxe hair care</span>
+          </span>
+        </a>
+      </div>
+
+      <div class="center">
+        <!-- Desktop solo (e no tablet/phone) -->
+        <div class="nav-links" aria-label="Quick links">
+          <a href="#">Homepage</a>
+          <a href="#">Products</a>
+          <a href="#">Services</a>
+          <a href="#">About Us</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Orders</a>
+          <a href="#">Cart</a>
+        </div>
+
+        <label class="search" aria-label="Search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" placeholder="Search oils, butters, kits…" />
+        </label>
+      </div>
+
+      <div class="right">
+        <button class="icon-btn" aria-label="Wish list" type="button">
+          <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <button class="icon-btn" aria-label="Profile" type="button">
+          <i class="fa-regular fa-user"></i>
+        </button>
+
+        <div class="cart-wrap">
+          <button class="icon-btn" aria-label="Cart" type="button">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="badge" id="cartCount">2</span>
+          </button>
+
+          <!-- Mini cart provisorioi -->
+          <div class="mini-cart" role="dialog" aria-label="Cart preview">
+            <h4>Cart preview</h4>
+
+            <div class="mini-item">
+              <div class="mini-thumb" aria-hidden="true"></div>
+              <div class="mini-meta">
+                <div class="name">Oilio di capelli</div>
+                <div class="sub">50ml • alla mano</div>
+                <div class="price">€14,90</div>
+              </div>
+              <div class="mini-qty">x1</div>
+            </div>
+
+            <div class="mini-item">
+              <div class="mini-thumb" aria-hidden="true"></div>
+              <div class="mini-meta">
+                <div class="name">Shea Butter </div>
+                <div class="sub">120g • per bambino</div>
+                <div class="price">€18,50</div>
+              </div>
+              <div class="mini-qty">x1</div>
+            </div>
+
+            <div class="mini-actions">
+              <button class="btn btn-outline" type="button">View cart</button>
+              <button class="btn btn-solid" type="button">Checkout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- content -->
+  <section class="demo-hero">
+    <div>
+      <h1>Il Benessere dei tuoi capelli</h1>
+      <p>
+        Warm, motherly, premium a boutique experience for textured hair care.
+        Scroll to see the navbar become more solid.
+      </p>
+    </div>
+  </section>
 </body>
 </html>
