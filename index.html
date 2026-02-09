@@ -4,19 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Team2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>LunaCurls</title>
 </head>
 <body>
+    <!--HEADER/NAV-->
+<header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
 
+      <a href="index.html" class="logo">LunaCurls</a>
+
+      <input type="checkbox" id="menu-toggle"> 
+      <label class="menu-btn" for="menu-toggle">☰</label>
+
+
+      <ul class="nav-links">
+        <li><a href="#products">Shop</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#wishlist">Wishlist</a></li>
+        <li><a href="#cart">Cart</a></li>
+        
+        <li class="nav-search">
+          <input type="search" placeholder="Search" aria-label="Search products" />
+        </li>
+        
+        <li>
+          <a aria-label="Cart" class="cart-btn">
+          🛒 <span class="cart-count">0</span>
+        </a>
+      </li>
+      </ul>
+    </nav>
+  </header>
+
+
+<!--Main-->
+<main>
 <!--Hero-Section-->
     <section class="hero">
     <div class="hero-inner">
-        <div class="hero-image">
-            <img src="images/productbundlekit.png"
-             alt="LunaCurls bundle kit"/>
-        </div>
-
-        <div class="hero-content">
+              <div class="hero-content">
             <h1>Il benessere dei tuoi capelli</h1>
             <p class="hero-bio">
                Luna Curls is a handmade haircare brand focused on nourishing Afro-textured hair with thoughtfully sourced ingredients, designed for real routines and real families.
@@ -24,18 +52,181 @@
 
             <ul class="hero-values">
                 <li>Handmade</li>
+                <li>Gentile formulas</li>
                 <li>Afro-textured hair first</li>
                 <li>Family-friendly formulas</li>
             </ul>
             <a href="productpage.html" class="btn-primary" aria-label="Shop LunaCurls Hair Products">
-                Shop LunaCurls Hair Products
+                Shop
             </a>
         </div>
      </div>
-        
     </section>
-<!--End of Hero-Section-->
 
+
+<!--FEATURED PRODUCTS-->
+    <section id="products" aria-labelledby="products-title" class="products">
+      <h2 id="products-title">Featured Products</h2>
+
+    <div class="product-grid">
+
+        <article class="product-card">
+            <img class="product-img" src="/images/shea-butter.png" alt="Shea Butter Hair Cream">
+
+            <div class="product-info">
+            <h3>Shea Butter Cream</h3>
+            <p class="product-desc">Deep moisture for natural curls.</p>
+
+            <div class="product-bottom">
+            <span class="price">€14.99</span>
+            <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+    </article>
+        
+
+     <article class="product-card">
+      <img class="product-img" src="/images/hair-oil.png" alt="Hair Growth Oil">
+      <div class="product-info">
+        <h3>Hair Growth Oil</h3>
+        <p class="product-desc">Boosts scalp circulation.</p>
+        <div class="product-bottom">
+          <span class="price">€11.99</span>
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+    </article>
+
+
+
+     <article class="product-card">
+      <img class="product-img" src="/images/hair-mist.png" alt="Hydrating Hair Mist">
+
+      <div class="product-info">
+        <h3>Hydrating Hair Mist</h3>
+        <p class="product-desc">Reduces frizz, treats dry hair, detangles, and redefines curls.</p>
+
+        <div class="product-bottom">
+          <span class="price">€9.99</span>
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+    </article>
+
+      </div>
+    </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-inner">
+
+    <div class="about-text">
+      <h2>Our Story</h2>
+
+      <p class="about-lead">
+        Luna Curls was born from a mother’s love
+        and a passion for healthy, natural hair.
+      </p>
+
+      <p>
+        Every oil, butter, and kit is carefully handcrafted
+        using nourishing African botanicals and modern
+        cosmetic science.
+      </p>
+
+      <p>
+        We believe every child and woman deserves
+        to feel confident, radiant, and deeply cared for —
+        starting from their crown.
+      </p>
+
+      <ul class="about-values">
+        <li>🌿 Natural Ingredients</li>
+        <li>🧴 Small-Batch Production</li>
+        <li>🤍 Family-Safe Formulas</li>
+        <li> Made with Care in Italy</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+  <div class="footer-inner">
+
+    <!-- Brand -->
+    <div class="footer-brand">
+      <h3>Luna Curls</h3>
+
+      <p>
+        Natural care for every curl.
+        Made with love for families.
+      </p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="footer-nav" aria-label="Footer Navigation">
+
+      <h4>Shop</h4>
+      <ul>
+        <li><a href="#">Hair Oils</a></li>
+        <li><a href="#">Butters</a></li>
+        <li><a href="#">Kits</a></li>
+      </ul>
+
+    </nav>
+
+    <nav class="footer-nav">
+
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+
+    </nav>
+
+    <!-- Newsletter -->
+    <div class="footer-newsletter">
+
+      <h4>Stay Connected</h4>
+
+      <p>
+        Get tips, offers, and hair-care secrets.
+      </p>
+
+      <form>
+        <input
+          type="email"
+          placeholder="Your email"
+          required>
+
+        <button type="submit">
+          Subscribe
+        </button>
+      </form>
+
+    </div>
+
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer-bottom">
+
+    <p>© 2026 Luna Curls. All rights reserved.</p>
+
+    <div class="socials">
+      <a href="#instagram">Instagram</a>
+      <a href="#tiktok">TikTok</a>
+      <a href="#facebook">Facebook</a>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>
